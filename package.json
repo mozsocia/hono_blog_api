@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r ts-node/register src/server.ts",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'node -r ts-node/register' src/server.ts",
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"npx ts-node\" src/server.ts",
     "build": "tsc"
   },
   "keywords": [],
