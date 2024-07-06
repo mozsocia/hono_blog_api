@@ -1,3 +1,4 @@
+// src/controllers/blogController.ts
 import { Context } from 'hono'
 import { BlogModel, BlogPost } from '../models/blogModel'
 

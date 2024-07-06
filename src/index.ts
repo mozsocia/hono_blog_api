@@ -1,3 +1,4 @@
+// src/index.ts
 import { Hono } from 'hono'
 import blogRoutes from './routes/blogRoutes'
 

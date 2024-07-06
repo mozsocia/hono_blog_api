@@ -1,3 +1,4 @@
+// routes/blogRoutes.ts
 import { Hono } from 'hono'
 import { BlogController } from '../controllers/blogController'
 
