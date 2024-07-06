@@ -6,7 +6,9 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "dev": "nodemon --watch \"src/**/*.ts\" --exec \"npx ts-node\" src/server.ts",
-    "build": "tsc"
+    "build": "rimraf dist && tsc && npm run copy-files",
+    "copy-files": "copyfiles -u 1 src/**/*.{json,yaml,html} dist",
+    "start:prod": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
+    "copyfiles": "^2.4.1",
     "nodemon": "^3.1.4",
+    "rimraf": "^5.0.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
   }
